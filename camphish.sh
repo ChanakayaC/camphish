@@ -176,7 +176,7 @@ arch2=$(uname -a | grep -o 'Android' | head -n1)
 if [[ $arch == *'arm'* ]] || [[ $arch2 == *'Android'* ]] ; then
 wget --no-check-certificate https://bin.equinox.io/a/e93TBaoFgZw/ngrok-2.2.8-linux-arm.zip > /dev/null 2>&1
 
-if [[ -e ngrok-stable-linux-arm.zip ]]; then
+if [[ -e ngrok-2.2.8-linux-arm.zip ]]; then
 unzip ngrok-2.2.8-linux-arm.zip > /dev/null 2>&1
 chmod +x ngrok
 rm -rf ngrok-stable-linux-arm.zip
